@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="animations.min.css">
   <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+  <link href="https://icons8.com/icon/39853/javascript" rel="stylesheet">
+  <link href="https://icons8.com/icon/61016/resume" rel="stylesheet">
 
 </head>
 
@@ -45,7 +47,9 @@
 
     <div class='animatedParent'>
       <h1 id="header" class="animated bounceIn">Hi, I'm Ashley.</h1>
-      <p id="belowHeader"> I am a recent Gold Badge graduate of ElevenFifty Academy.</p>
+      <p id="belowHeader"> I am a graduate of Eleven Fifty Academy.*
+        <p id="hope" class="animated fadeIn"> *(Hopefully) </p>
+      </p>
     </div>
     <br>
     <br>
@@ -68,7 +72,7 @@
 
   <div class="whoAmIBlock" id="Who am I?">
 
-    <div>
+    <div id="pics">
       <img src="USAF1.jpg" />
       <img src="1150.jpg" />
       <img src="Cooper.jpg" />
@@ -76,58 +80,82 @@
 
     <h2 class="Who Am I?">Who Am I?</h2>
 
-    <p id="Who Am I">Currently, I serve as a member of the US Air Force Reserves out of Wright-Patterson, OH. If this
-      presentation
-      goes well, I should be one of the newest memebers of ElevenFifty's Gold Badge cohort. I am
-      set to graduate late spring 2019. And, I just had my first child.</p>
+    <p id="Who Am I">Currently, I serve as a member of the US Air Force Reserves out of Wright-Patterson, OH. And, if
+      this
+      presentation goes well, I will be one of the newest memebers of Eleven Fifty's Gold Badge JavaScript cohort. I am
+      set to graduate in late spring 2019.</p>
 
     <h2 id="Interests">Interests</h2>
 
     <p>When I am not trying to make the Web a better place, I enjoy time outdoors. In the warmer months, I am an avid
-      runner and
-      frequent participant in 5Ks and the occasional half-marathon. During the colder months, I enjoy
-      spin-classes at my local gym.
-      <br>
-      When I'm not working or running, I enjoy spending free time with my husband & my newborn son, Cooper.
+      runner and frequent participant in 5Ks and the occasional half-marathon. During the colder months, I enjoy
+      spin-classes at my local gym. When I'm not working or running, I enjoy spending free time with my husband & my
+      newborn son, Cooper.
     </p>
   </div>
   <div class="educationBlock">
     <h2 id="Education">Education</h2>
 
-    <p>ElevenFifty Academy, JavaScript Program, Indianpolis, IN, 2019 </p>
-    <br>
-    <p>Cooley School of Law, Grand Rapids, MI, 2007</p>
-    <br>
-    <p>University of Southern Indaina (USI), Evansville, IN, Bachelor's of Science, Pre-Law Major, 3.46 GPA, 2006</p>
+    <p id="edu">ElevenFifty Academy, JavaScript Program, Indianpolis, IN, 2019 </p>
+    <p id="edu">Cooley School of Law, Grand Rapids, MI, 2007</p>
+    <p id="edu">University of Southern Indaina (USI), Evansville, IN, Bachelor's of Science, Pre-Law Major, 3.46 GPA, 2006</p>
 
     <div class="skillsBlock">
       <h2 id="Skills">Skills</h2>
 
-      <p>Hopefully I acquire some soon.</p>
+      <p>(Hopefully I'll acquire some soon.)</p>
+
+      <img id="icon" src="https://img.icons8.com/ios/50/000000/javascript.png">
+
+      <p>HTML, CSS & JavaScript Projects:</p>
+      <div>
+        <a target="blank" href="https://codepen.io/AshleyMWhitt13/full/zedGRM"><img class="pics2" src="Creature.png"
+            alt=""></a>
+        <a target="blank" href="https://ashleymwhitt.github.io/TutorialWebpage/TutorialWebpage.html"><img class="pics2"
+            src="TutorialWebpage.png" alt=""></a>
+        <a target="blank" href="https://ashleymwhitt.github.io/TutorialWebpage/TutorialWebpage.html"><img class="pics2"
+            src="API.png" alt=""></a>
+      </div>
+
+      <p>View Ashley M. Whitt's Resume as a Google Doc here:</p>
+      <div class="resume">
+        <a target="blank"
+          href="https://docs.google.com/document/d/1zniYwS58hieNrDp_6sljjsNkxHduQwJ6KAYNs899tuU/edit#heading=h.n64fgzu3lwuy"><img
+            class="resume" src="https://img.icons8.com/wired/64/000000/overview-pages-2.png"></a>
+      </div>
 
     </div>
 
     <div class="contactBlock">
+      <p>You can email me directly:</p>
+
 
       <div class="form-group">
         <form method="POST" action="https://formspree.io/ashleymwhitt13@gmail.com">
           <input type="email" class="form-control" name="email" placeholder="Your Email Here">
-          <textarea name="message" class="form-control" placeholder="Your Message Here"></textarea>
-          <button type="submit">Send Test</button>
+          <br>
+          <textarea type="text" class="form-control" name="message" placeholder="Your Message Here"></textarea>
+          <br>
+          <button type="submit">Send Message</button>
       </div>
 
 
-    <div id="social"><a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/ashley.marlaine"
-        target="_blank"></a>
-      <a class="twitterBtn smGlobalBtn" href="https://www.linkedin.com/in/ashley-whitt-89924317a/" target="_blank"></a>
-      <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/ashley-whitt-89924317a/" target="_blank"></a>
+      <div id="social"><a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/ashley.marlaine"
+          target="_blank"></a>
+        <a class="twitterBtn smGlobalBtn" href="https://www.linkedin.com/in/ashley-whitt-89924317a/"
+          target="_blank"></a>
+        <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/ashley-whitt-89924317a/"
+          target="_blank"></a>
+        <a class="githubBtn smGlobalBtn" href="https://github.com/ashleymwhitt" target="_blank"></a>
+      </div>
     </div>
-  </div>
   </div>
   </div>
   </div>
   </article>
   <script type="text/javascript" src="js.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
   <section>
     <div class="footer">Copyright &copy; Ashley Whitt's Gold Badge Portfolio 2019</p>
     </div>

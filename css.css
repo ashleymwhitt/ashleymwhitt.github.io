@@ -13,9 +13,9 @@ body {
     /* overflow: hidden; */
     background-color:black;
     text-decoration: none;
-    height: 55px;
+    height: 95px;
     width: 100%;
-    font-size: 33;
+    font-size: 14pt;
     position: relative;
   }
   
@@ -27,20 +27,19 @@ body {
     display: inline-block;
     color:white;
     text-align: center;
-    padding: 14px 46px;
+    padding: 5px 26px;
     text-decoration: none;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: lightgray;
-    z-index: 6;
+    background-color: white;
   }
   
   .dropdown-content a {
     color:black;
-    padding: 20px 46px;
+    padding: 26px;
     text-decoration: none;
     display: block;
     text-align: left; 
@@ -51,38 +50,10 @@ body {
   }
 
   .topNav a:hover {
-    background-color: lightgrey;
+    background-color: grey;
     color:black;
-    height: 27px; 
+    height: 35px; 
   }
-/*   
-  .topNav .icon {
-    display: none;
-  }
-
-@media screen and (max-width: 600px) {
-    .topNav li:not(:first-child) {display: none;}
-    .topNav a.icon { /* I THINK THE PROBLEM IS HERE*/
-      /* float: right;
-      display: block;
-    }
-  }
-  
-@media screen and (max-width: 600px) {
-    .topNav.responsive {position: relative;}
-    .topNav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    } 
-} */
-/*     
-.topNav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-} */
-/* NAV BAR */
 
 .landingScreen {
  background-color: black;
@@ -91,21 +62,47 @@ body {
 }
 
 #header {
-  font-size: 45pt;
+  font-size: 49pt;
   color:  white;
-  padding: 22pt;
+  padding: 2pt;
   text-align: left;
   padding-left: 5%;
   animation-name: bounceIn;
   animation-duration: 1s;
 }
 
-
 #belowHeader {
-  font-size: 33pt;
+  font-size: 35pt;
   color:  white;
   text-align: left;
   padding-left: 5%;
+}
+
+#hope {
+  -webkit-animation: fadein 35s;
+  color: white;
+  text-align: left;
+  padding-left: 5%;
+  font-size: 18pt;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 0; }
+  to   { opacity: 0; }
+  to   { opacity: 0; }
+  to   { opacity: 0; }
+  to   { opacity: 0; }
+  to   { opacity: 0; }
+  to   { opacity: 0; }
+  to   { opacity: .01; }
+  to   { opacity: .01; }
+  to   { opacity: .01; }
+  to   { opacity: .02; }
+  to   { opacity: .05; }
+  to   { opacity: .1; }
+  to   { opacity: .5; }
+  to   { opacity: 1; }
 }
 
 @keyframes bounceIn {
@@ -132,14 +129,18 @@ h2 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 22pt;
   text-align: center;
-  font-size: 33pt;
+  font-size: 36pt;
 }
 
 p {
-  /* color:purple; */
   padding: 2pt;
   text-align: center;
-  font-size: 29pt;
+  font-size: 23pt;
+}
+
+#edu {
+  font-size: 18pt;
+  margin-bottom: 42pt;
 }
 
 .whoAmIBlock {
@@ -155,7 +156,6 @@ p {
   color: white;
 }
 
-
 .skillsBlock {
   background-color: #e0e0e0;
   background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
@@ -166,6 +166,18 @@ p {
 .contactBlock {
   background-color:black;
   padding: 100pt;
+}
+
+.pics2 {
+  display: inline-block;
+  max-width: 96%;
+  height: 155pt;
+  width: 27%;
+  margin: 3%;
+}
+
+.resume {
+  margin-left: 190pt;
 }
 
 /* CONTACT BUTTONS */
@@ -240,10 +252,92 @@ p {
       background: #fff;
 }
 
+.githubBtn{
+  background: rgb(37, 77, 43);
+}
+
+.githubBtn:before{
+    font-family: "FontAwesome";
+    content: "\f09b"; 
+}
+
+.githubBtn:hover{
+    color: #0094BC;
+    background:black;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+#icon {
+  display: inline-block;
+  max-width: 6%;
+  height: 85pt;
+  width: 30%;
+  margin-left: 47%;
+}
+
+.download-btn {
+  padding: 36px 24px;
+  padding-left: 1pt;
+}
+
+.download-btn button {
+  width: 200px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: #ededed;
+  color: #0c0c0c;
+  font-size: 1em;
+  line-height: 25px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-bottom: 22pt;
+}
+
+.download-btn button:hover {
+  background: #b3b3b3;
+}
+
 form {
   color: white;
 }
-/* CONTACT BUTTONS */
+
+input[type=email] {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-left: 30%;
+}
+
+textarea[type=text] {
+  width: 40%;
+  height: 155px;;
+  padding: 22px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom:16px;
+  margin-left: 30%;
+}
+
+
+button {
+  /* margin: 8px 0; */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 45%;
+  margin-bottom: 75pt;
+}
 
 .footer {
     position: fixed;
